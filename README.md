@@ -6,12 +6,12 @@ This workshop will help you learn the basics of React Native including how to cr
 
 Before running this workshop you will need to have the following installed:
 
-- [https://nodejs.org/](NodeJS): While there is no specific version required we recommend getting the latest LTS version.
-- [https://git-scm.com/](Git)
-- [https://facebook.github.io/watchman/docs/install#buildinstall](Watchman) for Linux and Mac users
+- [NodeJS](https://nodejs.org/): While there is no specific version required we recommend getting the latest LTS version.
+- [Git](https://git-scm.com/)
+- [Watchman](https://facebook.github.io/watchman/docs/install#buildinstall) for Linux and Mac users
 
-It is also recommended that you install [https://expo.dev/client](Expo Go) on your device in order to run the application.
+It is also recommended that you install [Expo Go](https://expo.dev/client) on your device in order to run the application.
 
 ## Getting started
 
-Open and follow the slide deck at [https://nearform.github.io/react-patterns-workshop/](https://nearform.github.io/react-patterns-workshop/).
+Open and follow the slide deck at [https://nearform.github.io/react-native-workshop/](https://nearform.github.io/react-native-workshop/).
