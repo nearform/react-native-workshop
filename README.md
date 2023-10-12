@@ -10,6 +10,8 @@ Before running this workshop you will need to have the following installed:
 - [https://git-scm.com/](Git)
 - [https://facebook.github.io/watchman/docs/install#buildinstall](Watchman) for Linux and Mac users
 
+It is also recommended that you install [https://expo.dev/client](Expo Go) on your device in order to run the application.
+
 ## Getting started
 
 Open and follow the slide deck at [https://nearform.github.io/react-patterns-workshop/](https://nearform.github.io/react-patterns-workshop/).
