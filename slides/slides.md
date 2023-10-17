@@ -24,15 +24,15 @@ class: dense
 # Why React Native?
 
 - Single code base for:
-  - native iOS
-  - native Android
-  - web
+  - Native iOS
+  - Native Android
+  - Web
 - _Learn once, write anywhere_ - [reactnative.dev](https://reactnative.dev)
 - _Write once, deploy anywhere_
 - Leverage common (and possibly existing) team skills (JS + React)
-- App and Play store discoverability
+- App and Play Store discoverability
 - Access to native APIs
-- Greenfield
+- Greenfield or Brownfield
 
 ---
 class: dense
@@ -55,22 +55,25 @@ class: dense
   - 1-liner setup
   - Expo Go: great for POCs 🚀
   - Limited access to native code and APIs
-  - Can be hard to update 🤯
+  - Easier updates
 - Vanilla React Native
   - Full control 💪
-  - Easier updates
-  - Native code & APIs
+  - Directly edit native app files
+  - Can be hard to update 🤯
 
+---
+class: dense
 ---
 
 # Expo Go
 
 - "Shell" React Native app
 - Already published to App & Play stores
-- Includes "common" native modules (can't add others)
-- Easy to debug application
+- Includes "common" native modules
+- Fast and simple dev builds.
+- Does not require a Mac for iOS apps
 - Great for POCs
-- Need to publish final app for distribution
+- Need to build full app for distribution
 
 ---
 
