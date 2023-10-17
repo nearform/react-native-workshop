@@ -14,6 +14,6 @@ Before running this workshop you will need to have the following installed:
 
 It is also recommended that you install [Expo Go](https://expo.dev/client) on your device in order to run the application.
 
-## Getting started
+## ▶️▶️▶️ Start Here ◀️◀️◀️
 
 Open and follow the slide deck at [https://nearform.github.io/react-native-workshop/](https://nearform.github.io/react-native-workshop/).
