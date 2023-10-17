@@ -54,7 +54,7 @@ class: dense
 - Expo
   - 1-liner setup
   - Expo Go: great for POCs 🚀
-  - Limited access to native code and APIs **TODO: this is only for GO right?**
+  - Limited access to native code and APIs
   - Can be hard to update 🤯
 - Vanilla React Native
   - Full control 💪
