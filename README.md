@@ -1,5 +1,7 @@
 # React Native Workshop
 
+## From Zero to React Native
+
 This workshop will help you learn the basics of React Native including how to create, develop, and build an application. The workshop assumes you have some experience with JavaScript and some knowledge of React. While it is aimed at those who are new to React Native but can be used be engineers of any experience level.
 
 ## Prerequisites
