@@ -137,7 +137,7 @@ class: dense
 * Aer Lingus
 * Virgin Media
 * Telus
-* Get Ireland
+* Get Ireland Walking
 * NOMO
 * GHA Covid App
 
