@@ -134,7 +134,6 @@ class: dense
 
 # Who's using it? - NearForm Partners
 
-* HSE
 * Aer Lingus
 * Virgin Media
 * Telus
