@@ -63,5 +63,3 @@ The workshop splits app creation into the following five steps, each of which ha
 > - Keep track of the score
 > - Speak the score out loud
 > - Allow the score to be reset
-
-
