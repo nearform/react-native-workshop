@@ -16,9 +16,20 @@ It is also recommended that you install [Expo Go](https://expo.dev/client) on yo
 
 ## ▶️▶️▶️ Start Here ◀️◀️◀️
 
-Open and follow the slide deck at [https://nearform.github.io/react-native-workshop/](https://nearform.github.io/react-native-workshop/).
+Open and follow the slide deck here:
 
-## Workshop Steps overview
+**[https://nearform.github.io/react-native-workshop/](https://nearform.github.io/react-native-workshop/)**
+
+☝️☝️☝️ Start there ☝️☝️☝️
+
+## About this workshop
+
+By the end of the above ☝️ workshop, you'll have a working tilt-game app looking something like this:
+
+> [!IMPORTANT]
+> TODO: add a video or screenshots here
+
+The workshop splits app creation into these five steps, each of which has a folder in this repo containing working code for the app at that point:
 
  1. [Step 1](/step1)
 
