@@ -133,7 +133,6 @@ class: dense
 
 # Who's using it? - NearForm Partners
 
-* Aer Lingus
 * Virgin Media
 * Telus
 * Get Ireland Walking
