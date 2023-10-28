@@ -119,7 +119,7 @@ https://expo.dev/client
 - Clone this workshop!
   1. https://github.com/nearform/react-native-workshop
   2. Open these slides from the readme
-  3. Look in `./step1`, `./step2` etc for example code
+  3. Look in `./step1` etc for code and more info in `README`s
 
 - React Native's quickstart guide:
 
