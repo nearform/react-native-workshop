@@ -1,26 +1,23 @@
-# Step 1
+# Step 1: Drop the Ball
 
 Objectives:
- - Setup an Expo app
  - Add all dependencies
  - Add the game math using a pre-build hook
  - Setup the game area and a static ball
 
 ## Steps to get to this point
 
-### Create Expo project
+### 1. Install dependencies
+We install everything now to save time doing it later
 
-`$ npx create-expo-app NodeConfGame`
+> [!IMPORTANT]
+> In an Expo app, we must use `npx expo install` instead of `npm install` to install the dependencies. Expo is not compatible will all npm package versions. Using Expo's own `npx expo install` ensures only compatible versions are chosen.
 
-### Install dependencies
-We install evenything now to save time doing it later
+```sh
+npx expo install expo-haptics expo-sensors expo-speech react-native-reanimated react-native-safe-area-context`
+```
 
-`$ cd NodeConfGame`
-
-(**Important**: we must use `npx expo install` instead of `npm install` to install the dependencies, as Expo is not compatible will all npm package versions)
-`$ npx expo install expo-haptics expo-sensors expo-speech react-native-reanimated react-native-safe-area-context`
-
-### Update babel config
+### 2. Update babel config
 
 Edit `babel.config.js` to include the following plugin
 
@@ -28,20 +25,15 @@ Edit `babel.config.js` to include the following plugin
   plugins: ["react-native-reanimated/plugin"],
 ```
 
-### Start Expo
+> [!INFO]
+> `react-native-reanimated` is a widely-used package that enables slicker animations by using the device's own animation-related APIs on separate threads. Without it, most animations merely imitate native animations in JavaScript and can lag.
 
-`$ npm run start`
+### 3. Add the `useGameMath` hook
 
-### View the app in Expo Go
+Add the `useGameMath` hook to the project in `/useGameMath.js`. This contains the basic mathematics and positioning logic for our game. Since this is a React Native workshop and not a game dev workshop, we've kept this very simple, and provided it pre-written in a form that is easy to tinker with later.
 
-#### iOS
-Scan the QR code in the teminal from the iOS camera app and open the link in Expo Go
-
-#### Android
-Open Expo Go and use the `Scan QR code` button to scan the QR code in the terminal
-
-### Add the `useGameMath` hook
-Add the `useGameMath` hook to the project in `/useGameMath.js`
+> [!INFO]
+> React "Hooks" are important to understand if you are new to modern React. Any function starting with `use` is a "hook" that can hook into the React lifecycle and state, but [must follow certain rules](https://react.dev/warnings/invalid-hook-call-warning): in particular, they must be called every time a component is rendered (so, never put inside an `if` block or after a conditional `return`). 
 
 ```js
 export const useGameMath = ({
@@ -83,7 +75,7 @@ export const useGameMath = ({
 };
 ```
 
-### Add all the necessary imports
+### 4. Add all the necessary imports
 
 Doing this all at once will save time later
 
@@ -104,4 +96,4 @@ import {
 import { useGameMath } from "./useGameMath";
 ```
 
-**Additional steps and explination are needed her to explain using `SafeAreaProvider` and setting up the hook and ball styles**
+**Additional steps and explanation are needed here to explain using `SafeAreaProvider` and setting up the hook and ball styles**

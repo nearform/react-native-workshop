@@ -153,4 +153,24 @@ https://expo.dev/client
 <img src="/images/step0.jpg" style="width: 230px">
 </div>
 
+---
+
+# [Step 1: Drop the Ball](https://github.com/nearform/react-native-workshop/tree/main/step1)
+
+- See detailed instructions in [🔗 ./step1/README.md](https://github.com/nearform/react-native-workshop/tree/main/step1):
+  - Use `npx expo install` to add dependencies 
+  - Add necessary Babel config for Reanimated
+  - Copy in the provided `useGameMath` hook
+  - Add imports to main app screen
+  - Add game area `View` and ball
+
+<div style="width: 70%">
+ℹ️ Expo projects should add deps with `npx expo` install to always get the exact Expo-compatible version.
+
+ℹ️ Some dependencies need additional setup to help wire in the native integration.
+</div>
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
+<img src="/images/step1.jpg" style="width: 230px">
+</div>
 
