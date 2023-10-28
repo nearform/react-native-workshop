@@ -9,13 +9,22 @@ lineNumbers: false
 
 # React Native Workshop
 
+<div class="flex gap-8">
 <img src="/images/react-native.svg" style="width: 15%;">
+<img src="/images/expo.png" style="width: 15%;">
+</div>
 
 <div class="copyright">
-
 © Copyright 2023 NearForm Ltd. All Rights Reserved.
-
 </div>
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+
 
 ---
 class: dense
@@ -34,6 +43,13 @@ class: dense
 - Access to native APIs
 - Greenfield or Brownfield
 
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+
 ---
 class: dense
 ---
@@ -46,6 +62,13 @@ class: dense
 - Complex to get a "native feel" on all platforms
 - Complex deployment pipelines (compared to PWAs)
 - Migrating existing apps to RN can be complex (goal: 100% RN)
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
 
 ---
 
@@ -61,6 +84,13 @@ class: dense
   - Directly edit native app files
   - Can be hard to update 🤯
 
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+
 ---
 class: dense
 ---
@@ -75,8 +105,23 @@ class: dense
 - Great for POCs
 - Need to build full app for distribution
 
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+
 ---
 
 # Start here
 
 https://reactnative.dev/docs/environment-setup
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+  
