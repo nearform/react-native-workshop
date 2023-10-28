@@ -132,3 +132,25 @@ Please install Expo app
 https://expo.dev/client
 </div>
   
+---
+
+# [Step 0: Hello world](https://github.com/nearform/react-native-workshop/tree/main/step0)
+
+- Create and run starter Expo app:
+  - `npx create-expo-app NodeConfGame`
+    - (want TypeScript not JS? Add `-t`)
+  - `cd NodeConfGame` then  `npm i`
+  - `npx expo start --tunnel`
+  - Follow the instructions in terminal
+
+<div style="width: 70%">
+ℹ️ You'll need the Expo Go app on an Android or iOS device. Make sure the device is on the same WiFi as your laptop.
+
+ℹ️ If you prefer to use an emulator, Expo will install Expo Go on it. <br />⚠️ This workshop is better on a real device than an emulator.
+</div>
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
+<img src="/images/step0.jpg" style="width: 230px">
+</div>
+
+
