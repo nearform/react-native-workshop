@@ -116,7 +116,14 @@ https://expo.dev/client
 
 # Start here
 
-https://reactnative.dev/docs/environment-setup
+- Clone this workshop!
+  1. https://github.com/nearform/react-native-workshop
+  2. Open these slides from the readme
+  3. Look in `./step1`, `./step2` etc for example code
+
+- React Native's quickstart guide:
+
+https://reactnative.dev/docs/environment-setup?guide=quickstart
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
 Please install Expo app
