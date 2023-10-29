@@ -25,14 +25,14 @@ Edit `babel.config.js` to include the following plugin
   plugins: ["react-native-reanimated/plugin"],
 ```
 
-> [!INFO]
+> [!NOTE]
 > `react-native-reanimated` is a widely-used package that enables slicker animations by using the device's own animation-related APIs on separate threads. Without it, most animations merely imitate native animations in JavaScript and can lag.
 
 ### 3. Add the `useGameMath` hook
 
 Add the `useGameMath` hook to the project in `/useGameMath.js`. This contains the basic mathematics and positioning logic for our game. Since this is a React Native workshop and not a game dev workshop, we've kept this very simple, and provided it pre-written in a form that is easy to tinker with later.
 
-> [!INFO]
+> [!NOTE]
 > React "Hooks" are important to understand if you are new to modern React. Any function starting with `use` is a "hook" that can hook into the React lifecycle and state, but [must follow certain rules](https://react.dev/warnings/invalid-hook-call-warning): in particular, they can only be called by components or other hooks, and must be called every time a component is rendered (so, never put inside an `if` block or after a conditional `return`). 
 
 ```js
@@ -122,7 +122,7 @@ const Game = () => {
 };
 ```
 
-> [!INFO]
+> [!NOTE]
 > We can't just take the size of the "container", because it spreads its background colour into "safe areas" like the status bar (showing time, battery etc) and around any notches for cameras, microphone, speaker etc. The library `react-native-safe-area-context` gets data from the device about where these safe areas are and helps us take them into account.
 
 ### 6. Add the ball

@@ -119,7 +119,7 @@ https://expo.dev/client
 - Clone this workshop!
   1. https://github.com/nearform/react-native-workshop
   2. Open these slides from the readme
-  3. Look in `./step1` etc for code and more info in `README`s
+  3. Look in `./step0` etc for code and more info in `README`s
 
 - React Native's quickstart guide:
 
@@ -137,8 +137,8 @@ https://expo.dev/client
 # [Step 0: Hello world](https://github.com/nearform/react-native-workshop/tree/main/step0)
 
 - Create and run starter Expo app:
-  - `npx create-expo-app NodeConfGame`
-    - (want TypeScript not JS? Add `-t`)
+  - `npx create-expo-app NodeConfGame --template`
+  - Pick <b>"Blank"</b> for JavaScript, or "Blank (TypeScript)"
   - `cd NodeConfGame` then  `npm i`
   - `npx expo start --tunnel`
   - Follow the instructions in terminal
