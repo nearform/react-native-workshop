@@ -120,13 +120,20 @@ class: dense
 
 |||
 |-|-|
-|Meta: Facebook, Oculus, Messenger Desktop| <img src="/images/meta-logo.svg" width=100> |
-|Microsoft: Office, Outlook, Teams, Xbox Game Pass, Skype|<img src="/images/microsoft-logo.png" width=100 >|
-|Shopify| <img src="/images/shopify-logo.svg" width=100> |
-|Tesla| <img src="/images/tesla-logo.png" width=40> |
-|Discord| <img src="/images/discord-logo.svg" width=40> |
+|<img src="/images/microsoft-logo.png" width=100>|Microsoft: Office, Outlook, Teams, Xbox Game Pass, Skype|
+|<img src="/images/meta-logo.svg" width=100>|Meta: Facebook, Oculus, Messenger Desktop|
+|<img src="/images/shopify-logo.svg" width=100>|Shopify| 
+|<img src="/images/tesla-logo.png" width=40>|Tesla| 
+|<img src="/images/discord-logo.svg" width=40>|Discord| 
 | Many more... ||
 
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
 ---
 class: dense
 ---
@@ -139,6 +146,13 @@ class: dense
 * NOMO
 * GHA Covid App
 
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
 ---
 
 # Start here
