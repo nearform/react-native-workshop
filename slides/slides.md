@@ -113,6 +113,36 @@ https://expo.dev/client
 </div>
 
 ---
+class: dense
+---
+
+# Who's using it? - Community
+
+* Meta: Facebook, Oculus, Messenger Desktop
+* Microsoft: Office, Outlook, Teams, Xbox Game Pass, Skyp
+* Shopify
+* Wix
+* Pinterest
+* Tesla
+* Discord
+* Puma
+* Many more...
+
+---
+class: dense
+---
+
+# Who's using it? - NearForm Partners
+
+* HSE
+* Aer Lingus
+* Virgin Media
+* Telus
+* Get Ireland
+* NOMO
+* GHA Covid App
+
+---
 
 # Start here
 
@@ -173,4 +203,3 @@ https://expo.dev/client
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
 <img src="/images/step1.jpg" style="width: 230px">
 </div>
-
