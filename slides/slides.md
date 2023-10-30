@@ -121,10 +121,10 @@ class: dense
 |||
 |-|-|
 |<img src="/images/microsoft-logo.png" width=100>|Microsoft: Office, Outlook, Teams, Xbox Game Pass, Skype|
-|<img src="/images/meta-logo.svg" width=100>|Meta: Facebook, Oculus, Messenger Desktop|
+|<img src="/images/meta-logo.svg" width=150 style="margin-left:-24px;">|Meta: Facebook, Oculus, Messenger Desktop|
 |<img src="/images/shopify-logo.svg" width=100>|Shopify| 
 |<img src="/images/tesla-logo.png" width=40>|Tesla| 
-|<img src="/images/discord-logo.svg" width=40>|Discord| 
+|<img src="/images/discord-mark-white.svg" width=40>|Discord| 
 | Many more... ||
 
 
