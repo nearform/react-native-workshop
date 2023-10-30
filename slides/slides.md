@@ -134,6 +134,7 @@ Please install Expo app
 <img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
 https://expo.dev/client
 </div>
+
 ---
 class: dense
 ---
@@ -153,6 +154,7 @@ Please install Expo app
 <img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
 https://expo.dev/client
 </div>
+
 ---
 
 # Start here
