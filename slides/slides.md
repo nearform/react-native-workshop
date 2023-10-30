@@ -113,6 +113,47 @@ https://expo.dev/client
 </div>
 
 ---
+class: dense
+---
+
+# Who's using it? - Community
+
+|||
+|-|-|
+|<img src="/images/microsoft-logo.png" width=100>|Microsoft: Office, Outlook, Teams, Xbox Game Pass, Skype|
+|<img src="/images/meta-logo.svg" width=150 style="margin-left:-24px;">|Meta: Facebook, Oculus, Messenger Desktop|
+|<img src="/images/shopify-logo.svg" width=100>|Shopify| 
+|<img src="/images/tesla-logo.png" width=40>|Tesla| 
+|<img src="/images/discord-mark-white.svg" width=40>|Discord| 
+| Many more... ||
+
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+---
+class: dense
+---
+
+# Who's using it? - NearForm Partners
+
+* Virgin Media
+* Telus
+* Get Ireland Walking
+* NOMO
+* GHA Covid App
+
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+---
 
 # Start here
 
@@ -173,4 +214,3 @@ https://expo.dev/client
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
 <img src="/images/step1.jpg" style="width: 230px">
 </div>
-
