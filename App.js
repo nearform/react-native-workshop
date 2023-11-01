@@ -81,6 +81,22 @@ const Game = () => {
           ballAnimation.value.y + deviceMotionMeasurment.rotation.beta * 12
         ),
       };
+
+      // Check if the ball is in the target
+      if (
+        getIsBallInTarget({
+          ballX: ballAnimation.value.x,
+          ballY: ballAnimation.value.y,
+          targetX: targetAnimation.value.x,
+          targetY: targetAnimation.value.y,
+        })
+      ) {
+        // If it is, move the target to a new random position
+        targetAnimation.value = getRandomTargetPosition();
+
+        // And vibrate
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+      }
     });
 
     return subscription.remove;
