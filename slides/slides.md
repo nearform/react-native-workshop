@@ -236,3 +236,20 @@ https://expo.dev/client
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
 <img src="/images/step2.jpg" style="width: 230px">
 </div>
+
+--- 
+
+# [Step 3: Add a target](https://github.com/nearform/react-native-workshop/tree/main/step3)
+
+- See detailed instructions in [🔗 ./step3/README.md](https://github.com/nearform/react-native-workshop/tree/main/step3):
+  - Create a new reanimated view
+  - Give it styles to draw a hollow circle
+  - Add a new shared value and animated style, setting a transform
+  - Use the random position function from `useGameMath` to place it randomly within bounds
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
+<img src="/images/step3.jpg" style="width: 230px">
+</div>
+
+
+
