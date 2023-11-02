@@ -222,15 +222,14 @@ https://expo.dev/client
 # [Step 2: Get Rolling](https://github.com/nearform/react-native-workshop/tree/main/step2)
 
 - See detailed instructions in [🔗 ./step2/README.md](https://github.com/nearform/react-native-workshop/tree/main/step2):
-  - Add a `useEffect` call that adds a listener using `DeviceMotion` from Expo Sensors
-  - Return a cleanup function to remove the listener subscription on unmount
-  - Set event frequency to something reasonable (e.g. 16ms / 60fps) 
-  - Update the animatable ball's x and y transform position on tilt events
+  - Add a Expo Sensors `DeviceMotion` listener
+  - Set a reasonable event frequency (e.g. 16ms / 60fps) 
+  - Update the ball's x and y transform position on tilt
 
 <div style="width: 70%">
 ℹ️ Use `DeviceMotion.setUpdateInterval` to control how frequently motion events are received
 
-ℹ️ Don't forget to give `useEffect` an empty array as a second argument
+ℹ️ You can add the listener using `useEffect` (give it an empty array as a second argument, and a cleanup return function)
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
@@ -244,8 +243,11 @@ https://expo.dev/client
 - See detailed instructions in [🔗 ./step3/README.md](https://github.com/nearform/react-native-workshop/tree/main/step3):
   - Create a new reanimated view
   - Give it styles to draw a hollow circle
-  - Add a new shared value and animated style, setting a transform
-  - Use the random position function from `useGameMath` to place it randomly within bounds
+  - Position it randomly within game bounds
+
+<div style="width: 70%">
+ℹ️ Our `useGameMath` hook provides a function `getRandomTargetPosition` that can keep the target in bounds
+</div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
 <img src="/images/step3.jpg" style="width: 230px">
