@@ -183,7 +183,7 @@ https://expo.dev/client
   - `npx create-expo-app NodeConfGame --template`
   - Pick <b>"Blank"</b> for JavaScript, or "Blank (TypeScript)"
   - `cd NodeConfGame` then  `npm i`
-  - `npx expo start --tunnel`
+  - `npm start`
   - Follow the instructions in terminal
 
 <div style="width: 70%">
