@@ -54,7 +54,7 @@ const Game = () => {
   }));
 
   // START: STEP 2 ADDITION
-  // Setup the device motion sensor listner
+  // Setup the device motion sensor listener
   React.useEffect(() => {
     // Set the update interval to 16ms (60fps)
     DeviceMotion.setUpdateInterval(16);

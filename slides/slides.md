@@ -216,3 +216,23 @@ https://expo.dev/client
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
 <img src="/images/step1.jpg" style="width: 230px">
 </div>
+
+--- 
+
+# [Step 2: Get Rolling](https://github.com/nearform/react-native-workshop/tree/main/step2)
+
+- See detailed instructions in [🔗 ./step2/README.md](https://github.com/nearform/react-native-workshop/tree/main/step2):
+  - Add a `useEffect` call that adds a listener using `DeviceMotion` from Expo Sensors
+  - Return a cleanup function to remove the listener subscription on unmount
+  - Set event frequency to something reasonable (e.g. 16ms / 60fps) 
+  - Update the animatable ball's x and y transform position on tilt events
+
+<div style="width: 70%">
+ℹ️ Use `DeviceMotion.setUpdateInterval` to control how frequently motion events are received
+
+ℹ️ Don't forget to give `useEffect` an empty array as a second argument
+</div>
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
+<img src="/images/step2.jpg" style="width: 230px">
+</div>
