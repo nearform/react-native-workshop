@@ -33,10 +33,15 @@ By the end of the above ☝️ workshop, you'll have a working tilt-game app loo
 
 The workshop splits app creation into the following five steps, each of which has a folder in this repo containing working code for the app at that point:
 
+ 0. [Step 0](/step0)
+
+> **Objectives**:
+> - Set up an Expo app
+> - Make it run
+
  1. [Step 1](/step1)
 
 > **Objectives**:
-> - Setup an Expo app
 > - Add all dependencies
 > - Add the game math using a pre-build hook
 > - Setup the game area and a static ball
@@ -44,18 +49,21 @@ The workshop splits app creation into the following five steps, each of which ha
  2. [Step 2](/step2)
 
 > **Objectives**:
-> - Allow the ball to be controlled by tilting the device
+> - Detect device tilts by the user
+> - Control the ball by tilting the device
 
  3. [Step 3](/step3)
 
 > **Objectives**:
-> - Add a target at a random position (No collision detection yet though)
+> - Add a target circle
+> - Place it at a random position
+> - (No collision detection yet)
 
- 4. [Step 4](/step3)
+ 4. [Step 4](/step4)
 
 > **Objectives**:
-> - Add collision detection between the target and the ball
-> - Trigger haptic feedback when the ball collides with the target
+> - Detect collisions between the ball and the target
+> - Trigger haptic feedback
 
  5. [Step 5](/step5)
 

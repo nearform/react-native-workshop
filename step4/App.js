@@ -96,7 +96,7 @@ const Game = () => {
         targetAnimation.value = getRandomTargetPosition();
 
         // And vibrate
-        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+        Haptics.notificationAsync();
       }
       // END: STEP 4 ADDITION
     });
