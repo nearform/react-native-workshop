@@ -253,5 +253,20 @@ https://expo.dev/client
 <img src="/images/step3.jpg" style="width: 230px">
 </div>
 
+--- 
+
+# [Step 4: Detect target collisions](https://github.com/nearform/react-native-workshop/tree/main/step4)
+
+- See detailed instructions in [🔗 ./step4/README.md](https://github.com/nearform/react-native-workshop/tree/main/step4):
+  - Detect collisions between the ball and the target
+  - Trigger haptic feedback
+
+<div style="width: 70%">
+ℹ️ Our `useGameMath` hook provides a function `getIsBallInTarget` that can detect collisions between the target and the ball
+</div>
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
+<img src="/images/step4.gif" style="width: 230px">
+</div>
 
 

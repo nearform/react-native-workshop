@@ -1,13 +1,42 @@
-# Step 4
+# Step 4: Detect target collisions
 
 Objectives:
- - Add collision detection between the target and the ball
- - Trigger haptic feedback when the ball collides with the target
+ - Detect collisions between the ball and the target
+ - Trigger haptic feedback
 
 ## Steps to get to this point
 
-**To be fleshed out**
- 1. Within the DeviceMotion listener - Use `getIsBallInTarget` to check if the ball is in the target
- 2. If it is, update the shared value with a new target position
- 3. And trigger haptics
+### 1: Detect collisions between the ball and the target
 
+We can implement some basic collision detection within the DeviceMotion listener. We need to compare the position of the ball and the position of the current target, taking into account the ball and target size, as well as the width of the targets border.
+
+We'll use the pre-made `getIsBallInTarget` function from our custom hook to handle this for us, but feel free to adjust the logic if you desire. 
+
+```js
+if (
+  getIsBallInTarget({
+    ballX: ballAnimation.value.x,
+    ballY: ballAnimation.value.y,
+    targetX: targetAnimation.value.x,
+    targetY: targetAnimation.value.y,
+  })
+) { ... }
+```
+
+When the ball is in the target, we want to move the target to a new random position. For that we can use the `getRandomTargetPosition` helper again to update the position of the target. 
+
+```js
+targetAnimation.value = getRandomTargetPosition();
+```
+
+### 2: Trigger haptic feedback
+
+A great benifit of React Native is that it makes access access to device functionality, such as audio, haptic feedback and the camera, very easy.
+
+To improve the user experience of our game, we can trigger haptic feedback when the ball collides with the target.
+
+We will trigger a simple haptic notification using Expo's [Haptics](https://docs.expo.dev/versions/latest/sdk/haptics/) library.
+
+```js
+Haptics.notificationAsync();
+```
