@@ -20,14 +20,14 @@ Let's create it first, adding this inside our container view above our ball rean
 ...and let's add a new entry for it to the stylesheet, using width, height and border styles to draw a circle:
 
 ```js
-  target: {
-    position: "absolute",
-    width: TARGET_WIDTH,
-    height: TARGET_WIDTH,
-    borderRadius: TARGET_WIDTH,
-    borderWidth: TARGET_BORDER_WIDTH,
-    borderColor: "blue",
-  },
+target: {
+  position: "absolute",
+  width: TARGET_WIDTH,
+  height: TARGET_WIDTH,
+  borderRadius: TARGET_WIDTH,
+  borderWidth: TARGET_BORDER_WIDTH,
+  borderColor: "blue",
+},
 ```
 
 This uses some constants which we should define above the component:
@@ -43,16 +43,16 @@ const TARGET_BORDER_WIDTH = 2;
 Like with the ball, we can use `useSharedValue` and `useAnimatedStyle` to make the value capable of animation. We'll use the pre-made `getRandomTargetPosition` function from our custom hook to ensure the random position is within the game area:
 
 ```js
-  // Start with the target in a random position
-  const targetAnimation = useSharedValue(getRandomTargetPosition());
+// Start with the target in a random position
+const targetAnimation = useSharedValue(getRandomTargetPosition());
 
-  // Create the target styles based on the current ballAnimation value
-  const targetPosition = useAnimatedStyle(() => ({
-    transform: [
-      { translateX: targetAnimation.value.x },
-      { translateY: targetAnimation.value.y },
-    ],
-  }));
+// Create the target styles based on the current ballAnimation value
+const targetPosition = useAnimatedStyle(() => ({
+  transform: [
+    { translateX: targetAnimation.value.x },
+    { translateY: targetAnimation.value.y },
+  ],
+}));
 ```
 
 React Native components can take an array of styles, so we'll add this new style alongside the static circle styles:

@@ -50,24 +50,29 @@ From experimenting with the device and looking at the logs, we have probably not
 
 ```js
 React.useEffect(() => {
-    // Set the update interval to 16ms (60fps)
-    DeviceMotion.setUpdateInterval(16);
+  // Set the update interval to 16ms (60fps)
+  DeviceMotion.setUpdateInterval(16);
 
-    const subscription = DeviceMotion.addListener((deviceMotionMeasurment) => {
-      // Update the ball position based on the device motion sensor.
-      ballAnimation.value = {
-        // Change the value of the ball's x position by the device motion sensor's gamma value
-        x: getConstrainedBallX(
-          ballAnimation.value.x + deviceMotionMeasurment.rotation.gamma * 12
-        ),
-        // Change the value of the ball's y position by the device motion sensor's beta value
-        y: getConstrainedBallY(
-          ballAnimation.value.y + deviceMotionMeasurment.rotation.beta * 12
-        ),
-      };
-    });
+  const subscription = DeviceMotion.addListener((deviceMotionMeasurment) => {
+    // Don't do anthing if the expected `rotation` data is missing
+    if (!deviceMotionMeasurment.rotation) {
+      return;
+    }
 
-    return subscription.remove;
-  }, []);
+    // Update the ball position based on the device motion sensor.
+    ballAnimation.value = {
+      // Change the value of the ball's x position by the device motion sensor's gamma value
+      x: getConstrainedBallX(
+        ballAnimation.value.x + deviceMotionMeasurment.rotation.gamma * 12
+      ),
+      // Change the value of the ball's y position by the device motion sensor's beta value
+      y: getConstrainedBallY(
+        ballAnimation.value.y + deviceMotionMeasurment.rotation.beta * 12
+      ),
+    };
+  });
+
+  return subscription.remove;
+}, []); // <-- the empty array here means the function is only called once, after the first render
 ```
 

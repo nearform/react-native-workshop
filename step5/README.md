@@ -28,25 +28,25 @@ A neat feature of the setter functions from `useState` is, they can take either 
 
 ```js
 // ...inside `subscription` inside `useEffect`...
-        // And vibrate
-        Haptics.notificationAsync();
+// And vibrate
+Haptics.notificationAsync();
 
-        // START: STEP 5 ADDITION
-        // And update the score by 1
-        setScore((score) => {
-          const newScore = score + 1;
+// START: STEP 5 ADDITION
+// And update the score by 1
+setScore((score) => {
+  const newScore = score + 1;
 
-          return newScore;
-        });
-        // END: STEP 5 ADDITION
+  return newScore;
+});
+// END: STEP 5 ADDITION
 ```
 
 For this step let's just add some simple logging to check it's working as expected. Put this loose in the main `Game` function. If everything is working, we expect to see a new number printed in the console terminal that called `expo start` each time the player scores (this should currently be the only thing that causes the game board to re-render):
 
 ```js
-  console.log(score)
-  return (
-    <View style={styles.container}>      
+console.log(score)
+return (
+  <View style={styles.container}>      
 ```
 
 > [!INFO]
@@ -57,10 +57,10 @@ For this step let's just add some simple logging to check it's working as expect
 All text in React Native must be inside `Text` component. If you're already familiar with React on web, this is one of the major differences: in HTML, implicit text nodes are created for every string of text, but in React Native they must be explicit and any loose strings or numbers in a render will cause an error. Try this and see how React Native quickly rejects it:
 
 ```js
-    <View style={styles.container}>
-      {/* this will crash the app */}
-      The score is {score}
-      <Reanimated.View style={[styles.target, targetPosition]} />
+<View style={styles.container}>
+  {/* this will crash the app */}
+  The score is {score}
+  <Reanimated.View style={[styles.target, targetPosition]} />
 ```
 
 We need to wrap the text in a `Text` component, which also houses text styling. This is another difference to web: in React Native, text styles on a container block don't cascade down to text further down the tree. [Text styles](https://reactnative.dev/docs/text-style-props) need to be applied to `Text`.
@@ -68,16 +68,16 @@ We need to wrap the text in a `Text` component, which also houses text styling. 
 So let's wrap our text in a `View` to house the layout styles and `Text` to house the text:
 
 ```js
-  return (
-    <View style={styles.container}>
-      <Reanimated.View style={[styles.target, targetPosition]} />
-      <Reanimated.View style={[styles.ball, ballPosition]} />
+return (
+  <View style={styles.container}>
+    <Reanimated.View style={[styles.target, targetPosition]} />
+    <Reanimated.View style={[styles.ball, ballPosition]} />
 
-      {/* START: STEP 5 ADDITION */}
-      <View style={styles.scoreContainer}>
-        <Text style={styles.scoreText}>Score: {score}</Text>
-      </View>
-      {/* END: STEP 5 ADDITION */}
+    {/* START: STEP 5 ADDITION */}
+    <View style={styles.scoreContainer}>
+      <Text style={styles.scoreText}>Score: {score}</Text>
+    </View>
+    {/* END: STEP 5 ADDITION */}
 ```
 
 ...and define those styles:
@@ -100,17 +100,17 @@ Android and iOS have built-in text-to-speech APIs that allow any app to say text
 Expo's `expo-speech` library gives us a simple JavaScript API that calls the appropriate underlying system text-to-speech API with any arbitrary string. Let's call this inside our call to `setScore` so it accesses the latest score as it updates:
 
 ```js
-        // START: STEP 5 ADDITION
-        // And update the scrore by 1
-        setScore((score) => {
-          const newScore = score + 1;
+// START: STEP 5 ADDITION
+// And update the scrore by 1
+setScore((score) => {
+  const newScore = score + 1;
 
-          // Announce the updated score
-          Speech.speak(newScore.toString());
+  // Announce the updated score
+  Speech.speak(newScore.toString());
 
-          return newScore;
-        });
-        // END: STEP 5 ADDITION
+  return newScore;
+});
+// END: STEP 5 ADDITION
 ```
 
 Simple as one line - the "native module" part of `expo-speech` does all the hard stuff for us.
@@ -122,14 +122,14 @@ We're not saving the score in device storage so it'll reset when we restart the 
 React Native's `Pressable` component is the most versatile way to make a interactive element that responds to touch. It's `style` prop and children can be a function that takes an object that includes the current pressed state, to easily visually respond instantly to touches.
 
 ```js
-        <Pressable
-          onPress={() => setScore(0)}
-          style={({ pressed }) => ({
-            opacity: pressed ? 0.5 : 1,
-          })}
-        >
-          <Text style={styles.resetText}>Reset</Text>
-        </Pressable>
+<Pressable
+  onPress={() => setScore(0)}
+  style={({ pressed }) => ({
+    opacity: pressed ? 0.5 : 1,
+  })}
+>
+  <Text style={styles.resetText}>Reset</Text>
+</Pressable>
 ```
 
 > [!INFO]
