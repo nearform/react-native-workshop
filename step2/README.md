@@ -15,15 +15,15 @@ We want to add this listener when the screen is mounted and rendered - a "side e
 Initially, to see how `DeviceMotion` works, let's add a listener that just logs the details of the device tilt to the console:
 
 ```js
-  React.useEffect(() => {
-    const subscription = DeviceMotion.addListener((deviceMotionMeasurment) => {
-      // These logs will show in the terminal where we ran `expo start`
-      console.log('deviceMotionMeasurment', deviceMotionMeasurment);
-    });
+React.useEffect(() => {
+  const subscription = DeviceMotion.addListener((deviceMotionMeasurment) => {
+    // These logs will show in the terminal where we ran `expo start`
+    console.log('deviceMotionMeasurment', deviceMotionMeasurment);
+  });
 
-    // Returning the `remove` function tells the system it can stop listening if this is removed
-    return subscription.remove;
-  }, []); // <-- the empty array here means the function is only called once, after the first render
+  // Returning the `remove` function tells the system it can stop listening if this is removed
+  return subscription.remove;
+}, []); // <-- the empty array here means the function is only called once, after the first render
 ```
 
 ### 2: Control the update interval
