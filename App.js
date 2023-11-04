@@ -44,6 +44,9 @@ const Game = () => {
     targetBorderWidth: TARGET_BORDER_WIDTH,
   });
 
+  // Start with a score of 0
+  const [score, setScore] = React.useState(0);
+
   // Start with the ball in the center of the playable screen area
   const ballAnimation = useSharedValue(getCenterPosition());
 
@@ -98,6 +101,16 @@ const Game = () => {
 
         // And vibrate
         Haptics.notificationAsync();
+
+        // And update the score by 1
+        setScore((score) => {
+          const newScore = score + 1;
+
+          // Announce the updated score
+          Speech.speak(newScore.toString());
+
+          return newScore;
+        });
       }
     });
 
@@ -108,6 +121,19 @@ const Game = () => {
     <View style={styles.container}>
       <Reanimated.View style={[styles.target, targetPosition]} />
       <Reanimated.View style={[styles.ball, ballPosition]} />
+
+      <View style={styles.scoreContainer}>
+        <Text style={styles.scoreText}>Score: {score}</Text>
+
+        <Pressable
+          onPress={() => setScore(0)}
+          style={({ pressed }) => ({
+            opacity: pressed ? 0.5 : 1,
+          })}
+        >
+          <Text style={styles.resetText}>Reset</Text>
+        </Pressable>
+      </View>
     </View>
   );
 };
@@ -131,5 +157,13 @@ const styles = StyleSheet.create({
     borderRadius: TARGET_WIDTH,
     borderWidth: TARGET_BORDER_WIDTH,
     borderColor: "blue",
+  },
+  scoreContainer: { position: "absolute", bottom: 20, left: 20 },
+  scoreText: {
+    fontSize: 40,
+    fontWeight: "bold",
+  },
+  resetText: {
+    fontSize: 20,
   },
 });
