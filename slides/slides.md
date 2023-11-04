@@ -233,7 +233,7 @@ https://expo.dev/client
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
-<img src="/images/step2.jpg" style="width: 230px">
+<img src="/images/step2.gif" style="width: 230px">
 </div>
 
 --- 
@@ -250,7 +250,7 @@ https://expo.dev/client
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
-<img src="/images/step3.jpg" style="width: 230px">
+<img src="/images/step3.gif" style="width: 230px">
 </div>
 
 --- 
@@ -284,6 +284,6 @@ https://expo.dev/client
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
-<img src="/images/step5.jpg" style="width: 230px">
+<img src="/images/step5.gif" style="width: 230px">
 </div>
 
