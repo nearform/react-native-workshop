@@ -59,6 +59,11 @@ const Game = () => {
     DeviceMotion.setUpdateInterval(16);
 
     const subscription = DeviceMotion.addListener((deviceMotionMeasurment) => {
+      // Don't do anthing if the expected `rotation` data is missing
+      if (!deviceMotionMeasurment.rotation) {
+        return;
+      }
+
       // Update the ball position based on the device motion sensor.
       ballAnimation.value = {
         // Change the value of the ball's x position by the device motion sensor's gamma value
