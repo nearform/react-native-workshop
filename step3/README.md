@@ -5,6 +5,9 @@ Objectives:
  - Place it at a random position
  - (No collision detection yet)
 
+> [!NOTE]
+> You can [view a diff](https://github.com/nearform/react-native-workshop/pull/17/files) of all the changes for this step.
+
 ## Steps to get to this point
 
 ### 1: Add a View for the target

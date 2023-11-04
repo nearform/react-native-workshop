@@ -4,6 +4,9 @@ Objectives:
  - Detect collisions between the ball and the target
  - Trigger haptic feedback
 
+> [!NOTE]
+> You can [view a diff](https://github.com/nearform/react-native-workshop/pull/18/files) of all the changes for this step.
+
 ## Steps to get to this point
 
 ### 1: Detect collisions between the ball and the target

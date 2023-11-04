@@ -5,6 +5,9 @@ Objectives:
  - Add the game math using a pre-build hook
  - Setup the game area and a static ball
 
+> [!NOTE]
+> You can [view a diff](https://github.com/nearform/react-native-workshop/pull/7/files) of all the changes for this step.
+
 ## Steps to get to this point
 
 ### 1. Install dependencies

@@ -5,6 +5,9 @@ Objectives:
  - Speak the score out loud
  - Allow the score to be reset
 
+> [!NOTE]
+> You can [view a diff](https://github.com/nearform/react-native-workshop/pull/19/files) of all the changes for this step.
+
 ## Steps to get to this point
 
 ### 1: Store the score in state
