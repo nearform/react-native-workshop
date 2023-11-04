@@ -183,7 +183,7 @@ https://expo.dev/client
   - `npx create-expo-app NodeConfGame --template`
   - Pick <b>"Blank"</b> for JavaScript, or "Blank (TypeScript)"
   - `cd NodeConfGame` then  `npm i`
-  - `npx expo start --tunnel`
+  - `npm start`
   - Follow the instructions in terminal
 
 <div style="width: 70%">
@@ -198,7 +198,7 @@ https://expo.dev/client
 
 ---
 
-# [Step 1: Drop the Ball](https://github.com/nearform/react-native-workshop/tree/main/step1)
+# [Step 1: Drop the ball](https://github.com/nearform/react-native-workshop/tree/main/step1)
 
 - See detailed instructions in [🔗 ./step1/README.md](https://github.com/nearform/react-native-workshop/tree/main/step1):
   - Use `npx expo install` to add dependencies 
@@ -219,7 +219,7 @@ https://expo.dev/client
 
 --- 
 
-# [Step 2: Get Rolling](https://github.com/nearform/react-native-workshop/tree/main/step2)
+# [Step 2: Get rolling](https://github.com/nearform/react-native-workshop/tree/main/step2)
 
 - See detailed instructions in [🔗 ./step2/README.md](https://github.com/nearform/react-native-workshop/tree/main/step2):
   - Add a Expo Sensors `DeviceMotion` listener
@@ -255,11 +255,23 @@ https://expo.dev/client
 
 --- 
 
-# [Step 4](https://github.com/nearform/react-native-workshop/tree/main/step4)
+# [Step 4: Detect target collisions](https://github.com/nearform/react-native-workshop/tree/main/step4)
+
+- See detailed instructions in [🔗 ./step4/README.md](https://github.com/nearform/react-native-workshop/tree/main/step4):
+  - Detect collisions between the ball and the target
+  - Trigger haptic feedback
+
+<div style="width: 70%">
+ℹ️ Our `useGameMath` hook provides a function `getIsBallInTarget` that can detect collisions between the target and the ball
+</div>
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
+<img src="/images/step4.gif" style="width: 230px">
+</div>
 
 --- 
 
-# [Step 5](https://github.com/nearform/react-native-workshop/tree/main/step5)
+# [Step 5: Keep score](https://github.com/nearform/react-native-workshop/tree/main/step5)
 
 - See detailed instructions in [🔗 ./step5/README.md](https://github.com/nearform/react-native-workshop/tree/main/step5):
   - Store the score using `useState`

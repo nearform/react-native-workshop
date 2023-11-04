@@ -41,11 +41,11 @@ npm install
 ### 3. Start Expo
 
 ```sh
-npx expo start --tunnel
-```
+npm start
+````
 
 > [!NOTE]
-> The default way to start an Expo app is `npm run start`, which runs `expo start` without the `--tunnel` flag, starting the Expo "Metro" server on a 192.168... network address instead of using a direct WiFi tunnel. That way is usually a little faster, but the tunnel option is a little less prone to errors (especially on a busy network at a workshop!).
+> The default way to start an Expo app is `npm run start`, which runs `expo start` starting the Expo "Metro" server on a 192.168... network address. If you need you can run `npx expo start --tunnel` which will allow your application to be usable across the public Internet. This relies on [ngrok](https://ngrok.com/) and can be a little slower to run.
 > 
 > Both usually work fine. If one doesn't work for you, try the other. If you need to clear the cache for any reason, add `-c`.
 

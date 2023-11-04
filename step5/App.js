@@ -100,7 +100,7 @@ const Game = () => {
         targetAnimation.value = getRandomTargetPosition();
 
         // And vibrate
-        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+        Haptics.notificationAsync();
 
         // START: STEP 5 ADDITION
         // And update the score by 1
