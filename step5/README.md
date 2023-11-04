@@ -29,7 +29,7 @@ A neat feature of the setter functions from `useState` is, they can take either 
 ```js
 // ...inside `subscription` inside `useEffect`...
         // And vibrate
-        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+        Haptics.notificationAsync();
 
         // START: STEP 5 ADDITION
         // And update the score by 1
