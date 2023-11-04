@@ -133,4 +133,4 @@ React Native's `Pressable` component is the most versatile way to make a interac
 ```
 
 > [!INFO]
-> There are also a bunch of built-in `Touchable*` components but `Pressable` the newest, most versatile and recommended.
+> There are also a bunch of built-in `Touchable*` components but `Pressable` is the newest, most versatile and recommended.
