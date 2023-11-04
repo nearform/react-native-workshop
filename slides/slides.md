@@ -210,7 +210,7 @@ https://expo.dev/client
 <div style="width: 70%">
 ℹ️ Expo projects should add deps with `npx expo` install to always get the exact Expo-compatible version.
 
-ℹ️ Some dependencies need additional setup to help wire in the native integration.
+ℹ️ You can [🔗 view a diff](https://github.com/nearform/react-native-workshop/pull/7/files) of all the changes for this step.
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
@@ -230,6 +230,8 @@ https://expo.dev/client
 ℹ️ Use `DeviceMotion.setUpdateInterval` to control how frequently motion events are received
 
 ℹ️ You can add the listener using `useEffect` (give it an empty array as a second argument, and a cleanup return function)
+
+ℹ️ You can [🔗 view a diff](https://github.com/nearform/react-native-workshop/pull/16/files) of all the changes for this step.
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
@@ -247,6 +249,8 @@ https://expo.dev/client
 
 <div style="width: 70%">
 ℹ️ Our `useGameMath` hook provides a function `getRandomTargetPosition` that can keep the target in bounds
+
+ℹ️ You can [🔗 view a diff](https://github.com/nearform/react-native-workshop/pull/17/files) of all the changes for this step.
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
@@ -263,6 +267,8 @@ https://expo.dev/client
 
 <div style="width: 70%">
 ℹ️ Our `useGameMath` hook provides a function `getIsBallInTarget` that can detect collisions between the target and the ball
+
+ℹ️ You can [🔗 view a diff](https://github.com/nearform/react-native-workshop/pull/18/files) of all the changes for this step.
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
@@ -281,6 +287,8 @@ https://expo.dev/client
 
 <div style="width: 70%">
 ℹ️ All text must be inside a `Text` component, else React Native throws an error
+
+ℹ️ You can [🔗 view a diff](https://github.com/nearform/react-native-workshop/pull/19/files) of all the changes for this step.
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">

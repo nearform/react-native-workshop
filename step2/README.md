@@ -4,6 +4,9 @@ Objectives:
  - Detect device tilts by the user
  - Control the ball by tilting the device
 
+> [!NOTE]
+> You can [view a diff](https://github.com/nearform/react-native-workshop/pull/16/files) of all the changes for this step.
+
 ## Steps to get to this point
 
 ### 1: Add a DeviceMotion listener
