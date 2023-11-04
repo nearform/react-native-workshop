@@ -253,5 +253,25 @@ https://expo.dev/client
 <img src="/images/step3.jpg" style="width: 230px">
 </div>
 
+--- 
 
+# [Step 4](https://github.com/nearform/react-native-workshop/tree/main/step4)
+
+--- 
+
+# [Step 5](https://github.com/nearform/react-native-workshop/tree/main/step5)
+
+- See detailed instructions in [🔗 ./step5/README.md](https://github.com/nearform/react-native-workshop/tree/main/step5):
+  - Store the score using `useState`
+  - Show the score as `Text`
+  - Add a "reset" `Pressable` button
+  - Say the score using `expo-speech`
+
+<div style="width: 70%">
+ℹ️ All text must be inside a `Text` component, else React Native throws an error
+</div>
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
+<img src="/images/step5.jpg" style="width: 230px">
+</div>
 

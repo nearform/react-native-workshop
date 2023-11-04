@@ -103,7 +103,7 @@ const Game = () => {
         Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
 
         // START: STEP 5 ADDITION
-        // And update the scrore by 1
+        // And update the score by 1
         setScore((score) => {
           const newScore = score + 1;
 
