@@ -266,7 +266,7 @@ https://expo.dev/client
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
-<img src="/images/step4.mp4" style="width: 230px">
+<img src="/images/step4.gif" style="width: 230px">
 </div>
 
 
