@@ -22,7 +22,7 @@ npx expo install expo-haptics expo-sensors expo-speech react-native-reanimated r
 Edit `babel.config.js` to include the following plugin
 
 ```js
-  plugins: ["react-native-reanimated/plugin"],
+plugins: ["react-native-reanimated/plugin"],
 ```
 
 > [!NOTE]
