@@ -25,6 +25,26 @@ Please install Expo app
 https://expo.dev/client
 </div>
 
+---
+
+# React Native Workshop: Setup
+
+Save time later, start things downloading now!
+
+On your <b>laptop</b> 👇
+
+- `npm install --global @expo/ngrok`
+- On Mac or Linux, install Watchman:
+   - https://facebook.github.io/watchman/docs/install
+
+On your <b>Android or iOS device</b> 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
 
 ---
 class: dense
