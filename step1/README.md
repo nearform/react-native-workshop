@@ -28,6 +28,8 @@ Edit `babel.config.js` to include the following plugin
 plugins: ["react-native-reanimated/plugin"],
 ```
 
+After saving, restart the expo terminal service with ctrl-c in the terminal and re-start it, clearing caches (`npm start -- --tunnel -c` or `npm start -- -c`).
+
 > [!NOTE]
 > `react-native-reanimated` is a widely-used package that enables slicker animations by using the device's own animation-related APIs on separate threads. Without it, most animations merely imitate native animations in JavaScript and can lag.
 
