@@ -32,9 +32,20 @@ When the ball is in the target, we want to move the target to a new random posit
 targetAnimation.value = getRandomTargetPosition();
 ```
 
+We can make this into a nice smooth animation by using `withTiming` again. The default animation easing is quite suitable for this, sliding in a natural-looking way:
+
+```js
+  const targetPosition = useAnimatedStyle(() => ({
+    transform: [
+      { translateX: withTiming(targetAnimation.value.x, { duration: 350 }) },
+      { translateY: withTiming(targetAnimation.value.y, { duration: 350 }) },
+    ],
+  }));
+```
+
 ### 2: Trigger haptic feedback
 
-A great benifit of React Native is that it makes access access to device functionality, such as audio, haptic feedback and the camera, very easy.
+A great benefit of React Native is that it makes access access to device functionality, such as audio, haptic feedback and the camera, very easy.
 
 To improve the user experience of our game, we can trigger haptic feedback when the ball collides with the target.
 

@@ -36,9 +36,10 @@ Depending on your device, you might see an unreasonably high or low number of lo
 Instead of letting the system guess, let's explicitly tell it. We can see in the Expo Sensors documentation that `DeviceMotion` has a `setUpdateInterval` method: let's use it, before we start the listener. 16ms is equivalent to 60 frames per second:
 
 ```js
+const UPDATE_INTERVAL = 16 // 16ms is equivalent to 60fps
+
 React.useEffect(() => {
-  // Set the update interval to 16ms (60fps)
-  DeviceMotion.setUpdateInterval(16);
+  DeviceMotion.setUpdateInterval(UPDATE_INTERVAL);
 
   const subscription = DeviceMotion.addListener((deviceMotionMeasurment) => {
 ```
@@ -53,11 +54,10 @@ From experimenting with the device and looking at the logs, we have probably not
 
 ```js
 React.useEffect(() => {
-  // Set the update interval to 16ms (60fps)
-  DeviceMotion.setUpdateInterval(16);
+  DeviceMotion.setUpdateInterval(UPDATE_INTERVAL);
 
   const subscription = DeviceMotion.addListener((deviceMotionMeasurment) => {
-    // Don't do anthing if the expected `rotation` data is missing
+    // Don't do anything if the expected `rotation` data is missing
     if (!deviceMotionMeasurment.rotation) {
       return;
     }
@@ -79,3 +79,16 @@ React.useEffect(() => {
 }, []); // <-- the empty array here means the function is only called once, after the first render
 ```
 
+### 4. Make it smoother
+
+This updates the ball position every time an event comes in, but it doesn't smooth the transition between events. React Native Reanimated provides a selection of `with*` functions to provide different types of animation tweening and smoothing: we know the intended duration (16ms), so `withTiming` is a good fit, with "linear" easing for steady constant transitions:
+
+```js
+ // Create the ball styles based on the current ballAnimation value
+  const ballPosition = useAnimatedStyle(() => ({
+    transform: [
+      { translateX: withTiming(ballAnimation.value.x, { duration: UPDATE_INTERVAL, easing: Easing.linear }) },
+      { translateY: withTiming(ballAnimation.value.y, { duration: UPDATE_INTERVAL, easing: Easing.linear }) },
+    ],
+  }));
+```
