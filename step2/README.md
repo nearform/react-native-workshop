@@ -81,17 +81,7 @@ React.useEffect(() => {
 
 ### 4. Make it smoother
 
-This updates the ball position every time an event comes in, but it doesn't smooth the transition between events. React Native Reanimated provides a selection of `with*` functions to provide different types of animation tweening and smoothing: we know the intended duration (16ms), so `withTiming` is a good fit. Let's add `withTiming` and `Easing` imports, using "linear" easing for steady constant transitions:
-
-```js
-import Reanimated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming,
-  Easing,
-} from "react-native-reanimated";
-```
-...and apply them in `useAnimatedStyle`:
+This updates the ball position every time an event comes in, but it doesn't smooth the transition between events. React Native Reanimated provides a selection of `with*` functions to provide different types of animation tweening and smoothing: we know the intended duration (16ms), so `withTiming` is a good fit, with "linear" easing for steady constant transitions:
 
 ```js
  // Create the ball styles based on the current ballAnimation value

@@ -6,6 +6,8 @@ import * as Speech from "expo-speech";
 import Reanimated, {
   useAnimatedStyle,
   useSharedValue,
+  withTiming,
+  Easing,
 } from "react-native-reanimated";
 import {
   SafeAreaProvider,
