@@ -17,7 +17,7 @@ We install everything now to save time doing it later
 > In an Expo app, we must use `npx expo install` instead of `npm install` to install the dependencies. Expo is not compatible will all npm package versions. Using Expo's own `npx expo install` ensures only compatible versions are chosen.
 
 ```sh
-npx expo install expo-haptics expo-sensors expo-speech react-native-reanimated react-native-safe-area-context`
+npx expo install expo-haptics expo-sensors expo-speech react-native-reanimated react-native-safe-area-context
 ```
 
 ### 2. Update babel config
