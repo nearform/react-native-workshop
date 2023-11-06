@@ -99,6 +99,18 @@ import {
 import { useGameMath } from "./useGameMath";
 ```
 
+> [!WARNING]
+> On some devices (especially older iPhones), you might see a warning "new NativeEventEmitter() was called with...". This is a harmless warning from [a known issue inside expo-speech](https://github.com/expo/expo/issues/18640). It can be ignored and the "yellow box" in-app warning (dev-only) can be dismissed. If it gets very annoying, you can ignore it using React Native's LogBox in App.js:
+>
+> ```js
+> import {LogBox} from 'react-native';
+>
+> LogBox.ignoreLogs([
+>  '`new NativeEventEmitter()` was called with a non-null argument without the required `addListener` method.',
+>  '`new NativeEventEmitter()` was called with a non-null argument without the required `removeListeners` method.'
+> ]);
+> ```
+
 ### 5. Create the `Game` component
 
 Our `useGameMath` hook needs the width and height of the playable game area - not the whole white background, just the parts we want the ball to reach. We can get this from `react-native-safe-area-context`'s `useSafeAreaFrame` hook. To work, that library requires us to wrap our app in its `SafeAreaProvider`, a [React Context](https://react.dev/learn/passing-data-deeply-with-context) provider that fetches data and makes that data accessible to any component anywhere inside it.
