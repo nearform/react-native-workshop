@@ -1,14 +1,12 @@
-import { View, Text, StyleSheet, Button } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
+import { Button } from '../components/button'
 
 export const Welcome = ({ navigation }) => (
   <View style={styles.container}>
     <Text style={styles.title}>NodeConfGame</Text>
-    <Button
-      title="Play"
-      color="#000000"
-      // Tell the navigator to `navigate` to the screen where `name` prop is "Game"
-      onPress={() => navigation.navigate('Game')}
-    />
+    <View style={styles.buttons}>
+      <Button onPress={() => navigation.navigate('Game')}>Play</Button>
+    </View>
   </View>
 )
 
@@ -22,5 +20,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 32,
     letterSpacing: -3
+  },
+  buttons: {
+    padding: 16,
+    gap: 8,
+    alignSelf: 'stretch'
   }
 })
