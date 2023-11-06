@@ -35,11 +35,11 @@ class: dense
 - Single code base for:
   - Native iOS
   - Native Android
-  - Web
+  - Web (if you add `react-native-web`)
+  - (work in progress) Windows, MacOS and more
 - _Learn once, write anywhere_ - [reactnative.dev](https://reactnative.dev)
-- _Write once, deploy anywhere_
-- Leverage common (and possibly existing) team skills (JS + React)
-- App and Play Store discoverability
+- _Write once, deploy anywhere_ (App Store, Play Store)
+- Leverage common skills (JS + React)
 - Access to native APIs
 - Greenfield or Brownfield
 
@@ -56,12 +56,12 @@ class: dense
 
 # Why not React Native?
 
-- Small performance hit compared to native apps (swift, kotlin, etc)
-- Native animations
+- Small performance cost (less so in "new architecture")
+- Native animations need an extra library (we'll show you)
 - Requires entire team buy-in (designers, product owners, etc)
-- Complex to get a "native feel" on all platforms
 - Complex deployment pipelines (compared to PWAs)
-- Migrating existing apps to RN can be complex (goal: 100% RN)
+- Migrating existing apps to RN is complex (but possible!)
+- Needs Xcode and Android Studio to build binary (unless you use Expo)
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
 Please install Expo app
