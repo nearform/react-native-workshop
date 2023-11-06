@@ -320,3 +320,17 @@ https://expo.dev/client
 <img src="/images/step5.gif" style="width: 230px">
 </div>
 
+--- 
+
+# [Complete! 🎉](https://github.com/nearform/react-native-workshop/tree/main/step5)
+
+- Main workshop app is complete!
+- There's more if you want:
+   - Check out branch `bonus-step`
+   - ...or view the [🔗 PR on Github](https://github.com/nearform/react-native-workshop/pull/22)
+   - Explore navigation, screens, scrolling and more
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
+<img src="/images/step6-bonus.jpg" style="width: 230px">
+</div>
+
