@@ -6,6 +6,8 @@ import * as Speech from "expo-speech";
 import Reanimated, {
   useAnimatedStyle,
   useSharedValue,
+  withTiming,
+  Easing,
 } from "react-native-reanimated";
 import {
   SafeAreaProvider,
@@ -24,6 +26,7 @@ export default function App() {
 const BALL_WIDTH = 20;
 const TARGET_WIDTH = BALL_WIDTH * 2;
 const TARGET_BORDER_WIDTH = 2;
+const UPDATE_INTERVAL = 16 // 16ms is equivalent to 60fps
 
 const Game = () => {
   const { width, height } = useSafeAreaFrame();
@@ -53,8 +56,8 @@ const Game = () => {
   // Create the ball styles based on the current ballAnimation value
   const ballPosition = useAnimatedStyle(() => ({
     transform: [
-      { translateX: ballAnimation.value.x },
-      { translateY: ballAnimation.value.y },
+      { translateX: withTiming(ballAnimation.value.x, { duration: UPDATE_INTERVAL, easing: Easing.linear }) },
+      { translateY: withTiming(ballAnimation.value.y, { duration: UPDATE_INTERVAL, easing: Easing.linear }) },
     ],
   }));
 
@@ -64,15 +67,14 @@ const Game = () => {
   // Create the target styles based on the current ballAnimation value
   const targetPosition = useAnimatedStyle(() => ({
     transform: [
-      { translateX: targetAnimation.value.x },
-      { translateY: targetAnimation.value.y },
+      { translateX: withTiming(targetAnimation.value.x, { duration: 350 }) },
+      { translateY: withTiming(targetAnimation.value.y, { duration: 350 }) },
     ],
   }));
 
   // Setup the device motion sensor listner
   React.useEffect(() => {
-    // Set the update interval to 16ms (60fps)
-    DeviceMotion.setUpdateInterval(16);
+    DeviceMotion.setUpdateInterval(UPDATE_INTERVAL);
 
     const subscription = DeviceMotion.addListener((deviceMotionMeasurment) => {
       // Don't do anthing if the expected `rotation` data is missing
