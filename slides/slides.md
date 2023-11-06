@@ -56,12 +56,16 @@ class: dense
 
 # Why not React Native?
 
-- Small performance cost (less so in "new architecture")
-- Native animations need an extra library (we'll show you)
-- Requires entire team buy-in (designers, product owners, etc)
-- Complex deployment pipelines (compared to PWAs)
-- Migrating existing apps to RN is complex (but possible!)
-- Needs Xcode and Android Studio to build binary (unless you use Expo)
+- Small performance cost
+   - ...less so in "new architecture"
+- Native animations need an extra library
+   - ...we'll show you it
+- Complex deployment pipelines compared to web
+   - ...but simpler than two separate apps
+- Migrating existing apps to RN is complex
+   - ...but possible, unlike alternatives
+- Needs Xcode and Android Studio to build binaries
+   - ...unless you use Expo
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
 Please install Expo app
