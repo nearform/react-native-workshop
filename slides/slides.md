@@ -96,17 +96,18 @@ https://expo.dev/client
 
 ---
 
-# Expo vs vanilla React Native
+# Expo vs. vanilla React Native
 
 - Expo
-  - 1-liner setup
-  - Expo Go: great for POCs 🚀
-  - Limited access to native code and APIs
-  - Easier updates
+  - Simple setup
+  - Expo Go: great for POCs and Workshops! 🚀
+  - Expo Go: Limited access to native code and APIs
+  - Easier updates due to Continuous Native Generation 🪄
 - Vanilla React Native
-  - Full control 💪
+  - Full control 🧰 🛠️
   - Directly edit native app files
-  - Can be hard to update 🤯
+  - Immediate access to all future updates
+  - Can be difficult to update 🤯
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
 Please install Expo app
@@ -116,18 +117,18 @@ https://expo.dev/client
 </div>
 
 ---
-class: dense
----
 
-# Expo Go
+# Expo Go vs. Expo Custom Dev Client
 
-- "Shell" React Native app
-- Already published to App & Play stores
-- Includes "common" native modules
-- Fast and simple dev builds.
-- Does not require a Mac for iOS apps
-- Great for POCs
-- Need to build full app for distribution
+- Expo Go
+  - "Shell" React Native app
+  - Already published to App & Play stores
+  - Includes "common" native modules
+  - Fast and simple dev builds. No Mac required!
+- Custom Dev Client
+  - Custom "shell" React Native app
+  - Include any native modules or customisations
+  - Mac required for iOS builds
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
 Please install Expo app
