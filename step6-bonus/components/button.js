@@ -1,12 +1,12 @@
 import { Pressable, StyleSheet, Text } from 'react-native'
 
-export const Button = ({ children, ...pressableProps }) => (
+export const Button = ({ children, primary = false, ...pressableProps }) => (
   <Pressable
-    style={({ pressed }) => [styles.button, pressed && styles.pressed]}
+    style={[styles.button, primary && styles.primary, ({ pressed }) => pressed && styles.pressed]}
     accessibilityRole="button"
     {...pressableProps}
   >
-    <Text style={styles.text}>{children}</Text>
+    <Text style={[styles.text, primary && styles.textPrimary]}>{children}</Text>
   </Pressable>
 )
 
@@ -26,5 +26,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     color: '#000000'
+  },
+  primary: {
+    backgroundColor: '#000000'
+  },
+  textPrimary: {
+    color: '#ffffff'
   },
 })
