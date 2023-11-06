@@ -1,5 +1,6 @@
 import React from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
 import { DeviceMotion } from "expo-sensors";
 import * as Haptics from "expo-haptics";
 import * as Speech from "expo-speech";
@@ -16,7 +17,9 @@ import { useGameMath } from "./useGameMath";
 export default function App() {
   return (
     <SafeAreaProvider>
-      <Game />
+      <NavigationContainer>
+        <Game />
+      </NavigationContainer>
     </SafeAreaProvider>
   );
 }
