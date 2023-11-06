@@ -187,7 +187,7 @@ https://expo.dev/client
   - Follow the instructions in terminal
 
 <div style="width: 70%">
-ℹ️ You'll need the Expo Go app on an Android or iOS device, which must be online. See [./step0/README.md](https://github.com/nearform/react-native-workshop/tree/main/step0) for network trouble tips.
+ℹ️ You'll need the Expo Go app on an Android or iOS device, which must be online. See <code>./step0/README.md</code> for network trouble tips.
 
 ℹ️ If you prefer to use an emulator, Expo will install Expo Go on it. <br />⚠️ This workshop is better on a real device than an emulator.
 </div>
