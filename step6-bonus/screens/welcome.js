@@ -6,6 +6,7 @@ export const Welcome = ({ navigation }) => (
     <Text style={styles.title}>NodeConfGame</Text>
     <View style={styles.buttons}>
       <Button onPress={() => navigation.navigate('Game')}>Play</Button>
+      <Button onPress={() => navigation.navigate('About')}>About</Button>
     </View>
   </View>
 )
