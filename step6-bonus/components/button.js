@@ -1,10 +1,10 @@
 import { Pressable, StyleSheet, Text } from 'react-native'
 
-export const Button = ({ children, onPress }) => (
+export const Button = ({ children, ...pressableProps }) => (
   <Pressable
     style={({ pressed }) => [styles.button, pressed && styles.pressed]}
     accessibilityRole="button"
-    onPress={onPress}
+    {...pressableProps}
   >
     <Text style={styles.text}>{children}</Text>
   </Pressable>
