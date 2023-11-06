@@ -137,3 +137,16 @@ React Native's `Pressable` component is the most versatile way to make a interac
 
 > [!NOTE]
 > There are also a bunch of built-in `Touchable*` components but `Pressable` is the newest, most versatile and recommended.
+
+### 5: That's it! 🎉
+
+Congratulations, you've reached the end of the main part of this workshop.
+
+**If you want to do more,** check out the branch `bonus-step` or [view the draft PR on GitHub](https://github.com/nearform/react-native-workshop/pull/22) to explore more app features like:
+
+- navigation between screens,
+- scrollable content pages,
+- web links,
+- ideas for further enhancements you can explore on your own
+
+Look in the readme of the `step6-bonus` folder created in the branch, and look back through the commit history to see the steps applied one-by-one.
