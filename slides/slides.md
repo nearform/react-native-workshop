@@ -183,11 +183,11 @@ https://expo.dev/client
   - `npx create-expo-app NodeConfGame --template`
   - Pick <b>"Blank"</b> for JavaScript, or "Blank (TypeScript)"
   - `cd NodeConfGame` then  `npm i`
-  - `npm start`
+  - `npm start -- --tunnel`
   - Follow the instructions in terminal
 
 <div style="width: 70%">
-ℹ️ You'll need the Expo Go app on an Android or iOS device. Make sure the device is on the same WiFi as your laptop.
+ℹ️ You'll need the Expo Go app on an Android or iOS device, which must be online. See [./step0/README.md](https://github.com/nearform/react-native-workshop/tree/main/step0) for network trouble tips.
 
 ℹ️ If you prefer to use an emulator, Expo will install Expo Go on it. <br />⚠️ This workshop is better on a real device than an emulator.
 </div>

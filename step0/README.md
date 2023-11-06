@@ -41,13 +41,17 @@ npm install
 ### 3. Start Expo
 
 ```sh
-npm start
-````
+npm start -- --tunnel
+```
+
+This may prompt you to install `ngrok`, a service which helps serve your local app code to Expo's services.
+
+**If you can't get this to work**, and you have a good data connection on your phone (and low/no data roaming fees!), try setting up a WiFi hotspot on your device, connect your laptop to that, then run `npm start` to create a private WLAN connection between your laptop and device that can also access Expo's servers. 
 
 > [!NOTE]
-> The default way to start an Expo app is `npm run start`, which runs `expo start` starting the Expo "Metro" server on a 192.168... network address. If you need you can run `npx expo start --tunnel` which will allow your application to be usable across the public Internet. This relies on [ngrok](https://ngrok.com/) and can be a little slower to run.
+> The default way to start an Expo app is `npm run start`, which runs `expo start` starting the Expo "Metro" server on a 192.168... network address. This works great on private WiFi, but does not work on public WiFi like this hotel's. Using the `--tunnel` flag starts a web server that sends the data over public internet. This relies on [ngrok](https://ngrok.com/) and can be a little slower to run.
 > 
-> Both usually work fine. If one doesn't work for you, try the other. If you need to clear the cache for any reason, add `-c`.
+> Tunnel connections are usually robust, but can snarl up: if this happens, try restarting the service and clearing the cache by adding `-c` - like `npm start -- --tunnel -c`.
 
 ### 4. View the app in Expo Go
 
