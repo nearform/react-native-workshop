@@ -52,7 +52,7 @@ return (
   <View style={styles.container}>      
 ```
 
-> [!INFO]
+> [!NOTE]
 > As the app gets more complex and we add more features, if we leave that log in, it's likely we'll see multiple entries showing the same score as additional features cause more re-renders for other reasons. It's a good practice in React and React Native to keep an eye on re-renders: while they're generally very fast as React only usually updates real UI elements that have genuinely changed, spotting unexpected re-renders can be a good way to catch sloppy or bug-prone code that can lead to hard-to-catch and hard-to-fix bugs further down the line.
 
 ### 2: Show the score as text
@@ -135,5 +135,5 @@ React Native's `Pressable` component is the most versatile way to make a interac
 </Pressable>
 ```
 
-> [!INFO]
+> [!NOTE]
 > There are also a bunch of built-in `Touchable*` components but `Pressable` is the newest, most versatile and recommended.
