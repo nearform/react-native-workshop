@@ -70,3 +70,7 @@ The workshop splits app creation into the following five steps, each of which ha
 > - Keep track of the score
 > - Speak the score out loud
 > - Allow the score to be reset
+
+ 6. Bonus steps
+
+If you complete all the above and want to do more, visit the [./step6-bonus](https://github.com/nearform/react-native-workshop/tree/bonus-step/step6-bonus) directory in the [bonus-step PR branch](https://github.com/nearform/react-native-workshop/pull/22).
