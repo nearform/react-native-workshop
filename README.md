@@ -28,8 +28,7 @@ Open and follow the slide deck here:
 
 By the end of the above ☝️ workshop, you'll have a working tilt-game app looking something like this:
 
-> [!IMPORTANT]
-> TODO: add a video or screenshots here
+![Animated gif of a simple ball-rolling game](https://github.com/nearform/react-native-workshop/blob/main/slides/images/step5.gif)
 
 The workshop splits app creation into the following five steps, each of which has a folder in this repo containing working code for the app at that point:
 
