@@ -29,12 +29,11 @@ https://expo.dev/client
 
 # React Native Workshop: Setup
 
-Save time later, start things downloading now!
+On your <b>dev computer</b> 👇
 
-On your <b>laptop</b> 👇
-
-- `npm install --global @expo/ngrok`
-- On Mac or Linux, install Watchman:
+- On public WiFi? (hotel, cafe, train...)
+   - `npm install --global @expo/ngrok`
+- On Mac or Linux? Install Watchman
    - https://facebook.github.io/watchman/docs/install
 
 On your <b>Android or iOS device</b> 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉
@@ -205,9 +204,9 @@ https://expo.dev/client
 # [Step 0: Hello world](https://github.com/nearform/react-native-workshop/tree/main/step0)
 
 - Create and run starter Expo app:
-  - `npx create-expo-app NodeConfGame --template`
+  - `npx create-expo-app WorkshopGame --template`
   - Pick <b>"Blank"</b> for JavaScript, or "Blank (TypeScript)"
-  - `cd NodeConfGame` then  `npm i`
+  - `cd WorkshopGame` then  `npm i`
   - `npm start -- --tunnel`
   - Follow the instructions in terminal
 
