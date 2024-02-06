@@ -205,9 +205,9 @@ https://expo.dev/client
 # [Step 0: Hello world](https://github.com/nearform/react-native-workshop/tree/main/step0)
 
 - Create and run starter Expo app:
-  - `npx create-expo-app NodeConfGame --template`
+  - `npx create-expo-app WorkshopGame --template`
   - Pick <b>"Blank"</b> for JavaScript, or "Blank (TypeScript)"
-  - `cd NodeConfGame` then  `npm i`
+  - `cd WorkshopGame` then  `npm i`
   - `npm start -- --tunnel`
   - Follow the instructions in terminal
 

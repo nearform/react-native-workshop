@@ -9,7 +9,7 @@ Objectives:
 ### 1. Create Expo project
 
 ```sh
-npx create-expo-app NodeConfGame --template
+npx create-expo-app WorkshopGame --template
 ```
 
 This creates an Expo app, and lets you choose which of Expo's built-in app templates to use:
@@ -31,7 +31,7 @@ If you want to continue exploring React Native after this workshop, consider cre
 ### 2. Install dependencies
 
 ```sh
-cd NodeConfGame
+cd WorkshopGame
 ```
 
 ```sh

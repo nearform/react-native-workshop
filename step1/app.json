@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "NodeConfGame",
-    "slug": "NodeConfGame",
+    "name": "WorkshopGame",
+    "slug": "WorkshopGame",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
