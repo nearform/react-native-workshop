@@ -55,7 +55,18 @@ const Game = () => {
     ],
   }));
 
-  // Setup the device motion sensor listener
+  // Start with the target in a random position
+  const targetAnimation = useSharedValue(getRandomTargetPosition());
+
+  // Create the target styles based on the current ballAnimation value
+  const targetPosition = useAnimatedStyle(() => ({
+    transform: [
+      { translateX: targetAnimation.value.x },
+      { translateY: targetAnimation.value.y },
+    ],
+  }));
+
+  // Setup the device motion sensor listner
   React.useEffect(() => {
     // Set the update interval to 16ms (60fps)
     DeviceMotion.setUpdateInterval(16);
@@ -79,6 +90,8 @@ const Game = () => {
 
   return (
     <View style={styles.container}>
+      <Reanimated.View style={[styles.target, targetPosition]} />
+
       <Reanimated.View style={[styles.ball, ballPosition]} />
     </View>
   );
@@ -95,5 +108,13 @@ const styles = StyleSheet.create({
     height: BALL_WIDTH,
     borderRadius: BALL_WIDTH,
     backgroundColor: "red",
+  },
+  target: {
+    position: "absolute",
+    width: TARGET_WIDTH,
+    height: TARGET_WIDTH,
+    borderRadius: TARGET_WIDTH,
+    borderWidth: TARGET_BORDER_WIDTH,
+    borderColor: "blue",
   },
 });
