@@ -92,3 +92,16 @@ This updates the ball position every time an event comes in, but it doesn't smoo
     ],
   }));
 ```
+
+> [!WARNING]
+> The animation may appear jerky at first on some devices (especially modern iPhones newer than 2021).
+> We believe this is caused by how React caches some state when applying "Fast refreshes" during hot reloads. Try the following:
+>
+> - Reload the app with `r` in the terminal, or
+> - Fully close and reload the Expo app on the device, or
+> - Shake the device to open the "Expo dev menu" and turn off "Fast refresh", then reload, or
+> - `ctrl-c` in terminal to close the Expo server and restart with `-c`  to clear server caches
+>
+> If you encounter this issue, please help us refine this troubleshooting by adding a comment to
+> https://github.com/nearform/react-native-workshop/issues/35 giving your device version and what (if anything)
+> fixed the issue for you!
