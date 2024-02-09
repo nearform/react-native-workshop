@@ -247,13 +247,13 @@ https://expo.dev/client
 
 - See detailed instructions in [🔗 ./step2/README.md](https://github.com/nearform/react-native-workshop/tree/main/step2):
   - Add a Expo Sensors `DeviceMotion` listener
-  - Set a reasonable event frequency (e.g. 16ms / 60fps) 
+  - Use `DeviceMotion.setUpdateInterval` (e.g. 16ms / 60fps) 
   - Update the ball's x and y transform position on tilt
 
 <div style="width: 70%">
-ℹ️ Use `DeviceMotion.setUpdateInterval` to control how frequently motion events are received
+ℹ️ <b>Animation may look jerky at first</b> - try reloading the app, or shake device (opens Expo Dev Menu) then turn off "fast refresh"
 
-ℹ️ You can add the listener using `useEffect` (give it an empty array as a second argument, and a cleanup return function)
+ℹ️ Simplest way to start the motion listener is `useEffect` (with an empty dep array, and return a cleanup unsubscribe function)
 
 ℹ️ You can [🔗 view a diff](https://github.com/nearform/react-native-workshop/pull/16/files) of all the changes for this step.
 </div>
