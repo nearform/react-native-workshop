@@ -255,13 +255,14 @@ https://expo.dev/client
   - `npx create-expo-app WorkshopGame --template`
   - Pick <b>"Blank"</b> for JavaScript, or "Blank (TypeScript)"
   - `cd WorkshopGame` then  `npm i`
-  - `npm start -- --tunnel`
+  - `npm start` (on normal home WiFi)
+     - Restricted network? `npm start -- --tunnel`
   - Follow the instructions in terminal
 
 <div style="width: 70%">
 ℹ️ You'll need the Expo Go app on an Android or iOS device, which must be online. See <code>./step0/README.md</code> for network trouble tips.
 
-ℹ️ If you prefer to use an emulator, Expo will install Expo Go on it. <br />⚠️ This workshop is better on a real device than an emulator.
+ℹ️ Expo supports emulators, but this workshop's best on real devices.
 </div>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 230px;">
