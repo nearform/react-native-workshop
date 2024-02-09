@@ -38,6 +38,10 @@ On your <b>dev computer</b> 👇
 
 On your <b>Android or iOS device</b> 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉 👉
 
+<br />
+
+<b style="color: rgb(83, 151, 255)"><Link to="summary" title="Skip intro"/></b>
+
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
 Please install Expo app
 👇 Android or iOS 👇
@@ -171,6 +175,50 @@ class: dense
 * NOMO
 * GHA Covid App
 
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+
+---
+routeAlias: summary
+---
+
+<img src="/images/react-native.svg" style="width: 10%; float: left; margin-right: 20px">
+
+#### Summary
+# React Native?
+
+- 📱✨📱 <b>*Real* android & iOS apps</b>
+  - *Not* HTML & CSS ("hybrid apps")
+- 📱🧠📱 <b>One JavaScript brain</b>
+  - React render cycle, state, etc
+- 📱→🖥️ <b>Optional web module</b>
+  - ...plus Windows, MacOS, TVs, VR...
+
+<div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
+Please install Expo app
+👇 Android or iOS 👇
+<img src="/images/qrcode_expo.dev.png" style="height: 200px; width: 200px; margin: 10px 0;">
+https://expo.dev/client
+</div>
+
+---
+
+<img src="/images/expo.png" style="width: 10%; float: left; margin-right: 20px">
+
+#### Summary
+# Expo?
+
+- <b>Third-party ("React Native as a Service")</b>
+  - 🤑 Free (can pay to queue-jump)
+  - 😌 Lets devs skip local binary builds
+  - 🙂 Pre-tested dep versions
+  - 🤔 Less direct control...
+- 🚀 ...but great for demos and workshops!
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
 Please install Expo app
