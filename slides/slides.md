@@ -40,7 +40,7 @@ On your <b>Android or iOS device</b> 👉 👉 👉 👉 👉 👉 👉 👉 �
 
 <br />
 
-<b style="color: rgb(83, 151, 255)"><Link to="summary" title="Skip intro"/></b>
+<b><Link to="summary" title="Skip intro"/></b>
 
 <div class="flex flex-col absolute bottom-8 right-6" style="width: 200px;">
 Please install Expo app
