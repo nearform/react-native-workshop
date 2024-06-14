@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nearform/react-native-workshop#readme",
   "dependencies": {
-    "@slidev/cli": "^0.48.0-beta.3",
+    "@slidev/cli": "^0.49.10",
     "slidev-theme-nearform": "^2.0.0"
   }
 }
