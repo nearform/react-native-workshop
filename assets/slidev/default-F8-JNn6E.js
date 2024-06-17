@@ -1,0 +1,1 @@
+import{o,b as t,f as s}from"../modules/vue-BLuUREMP.js";import{_ as r}from"../index-BeRQwvit.js";const a={},n={class:"slidev-layout default"};function c(e,l){return o(),t("div",n,[s(e.$slots,"default")])}const _=r(a,[["render",c],["__file","/home/runner/work/react-native-workshop/react-native-workshop/slides/node_modules/@slidev/client/layouts/default.vue"]]);export{_ as I};
