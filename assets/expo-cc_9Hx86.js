@@ -1,0 +1,1 @@
+var e=`/react-native-workshop/assets/expo-CnD-aZMx.png`;export{e as t};
