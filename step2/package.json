@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~49.0.15",
+    "expo": "~54.0.31",
     "expo-haptics": "~12.4.0",
     "expo-sensors": "~12.3.0",
     "expo-speech": "~11.3.0",
