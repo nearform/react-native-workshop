@@ -17,21 +17,22 @@ We install everything now to save time doing it later
 > In an Expo app, we must use `npx expo install` instead of `npm install` to install the dependencies. Expo is not compatible will all npm package versions. Using Expo's own `npx expo install` ensures only compatible versions are chosen.
 
 ```sh
-npx expo install expo-haptics expo-sensors expo-speech react-native-reanimated react-native-safe-area-context
+npx expo install expo-haptics expo-sensors expo-speech react-native-reanimated react-native-worklets react-native-safe-area-context
 ```
-
-### 2. Update babel config
-
-Edit `babel.config.js` to include the following plugin
-
-```js
-plugins: ["react-native-reanimated/plugin"],
-```
-
-After saving, restart the expo terminal service with ctrl-c in the terminal and re-start it, clearing caches (`npm start -- --tunnel -c` or `npm start -- -c`).
 
 > [!NOTE]
 > `react-native-reanimated` is a widely-used package that enables slicker animations by using the device's own animation-related APIs on separate threads. Without it, most animations merely imitate native animations in JavaScript and can lag.
+>
+> Since Reanimated 4, the code that runs on those separate threads ("worklets") lives in its own package, `react-native-worklets`, which Reanimated needs installed alongside it.
+
+### 2. Restart Expo with a clean cache
+
+Reanimated needs a Babel plugin to turn some of our functions into worklets. Expo's default Babel preset (`babel-preset-expo`) adds this plugin automatically as soon as `react-native-worklets` is installed, so there is **no `babel.config.js` to edit**.
+
+> [!WARNING]
+> Older guides (and older versions of this workshop) tell you to add `plugins: ["react-native-reanimated/plugin"]` to `babel.config.js`. Don't do this on a current Expo SDK: the preset already includes the plugin.
+
+Babel output is cached, so restart the Expo terminal service with ctrl-c in the terminal and re-start it, clearing caches (`npm start -- --tunnel -c` or `npm start -- -c`).
 
 ### 3. Add the `useGameMath` hook
 
