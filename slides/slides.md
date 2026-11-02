@@ -275,7 +275,7 @@ https://expo.dev/client
 
 - See detailed instructions in [🔗 ./step1/README.md](https://github.com/nearform/react-native-workshop/tree/main/step1):
   - Use `npx expo install` to add dependencies 
-  - Add necessary Babel config for Reanimated
+  - Restart Expo with a clean cache (`-c`)
   - Copy in the provided `useGameMath` hook
   - Add imports to main app screen
   - Add game area `View` and ball
